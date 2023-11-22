@@ -1,6 +1,7 @@
-FROM ubuntu
+FROM openjdk
 WORKDIR /home/ubuntu/onlinebookstore
 
 RUN apt-get update
 RUN apt-get install -y openjdk-11-jre
+RUN apt-get install maven -y
 CMD ["openjdk" ,"appspec.yaml"]
