@@ -1,6 +1,6 @@
 FROM ubuntu
-WORKDIR /app
-COPY ./app
+WORKDIR /home/ubuntu/onlinebookstore/docker file
+
 RUN apt-get update
 RUN apt-get install -y openjdk-11-jre
 CMD ["openjdk" ,"appspec.yaml"]
